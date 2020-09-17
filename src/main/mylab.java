@@ -4,21 +4,20 @@ public class mylab {
 
 	public static void main(String[] args) {
 		 
-		String word = "Корок";
+		    String word = "Короxк";
 	        
-		// перетворює всі символи рядка з великих букв в маленькі
-		word = word.toLowerCase(); 
-	        
-		//Всі знаки та пробіл 
-		word = word.replaceAll( " ", "");
-	        word = word.replaceAll( ".", "");
-	        word = word.replaceAll( ",", "");
-	        word = word.replaceAll( "!", "");
-	        word = word.replaceAll( ":", "");
-	        word = word.replaceAll( ";", "");
-	        word = word.replaceAll( "`", ""); 
+		    // перетворює всі символи рядка з великих букв в маленькі
+		    word = word.toLowerCase(); 
+		    
+		    //Всі знаки та пробіл 
+	        word = word.replace(" ", "");
+	        word = word.replace(".", "");
+	        word = word.replace(",", "");
+	        word = word.replace("!", "");
+	        word = word.replace(":", "");
+	        word = word.replace(";", "");
+	        word = word.replace("`", ""); 
 
-	        
 	        //Алгоритм 1: побуквенно порівнюємо початок і кінець
 
 	        boolean flag = true; 
@@ -30,7 +29,7 @@ public class mylab {
 			*/
 	        
 	        for (int i = 0; i < word.length(); i++) { 
-	        	if (word.charAt(i) != word.charAt(word.length() - i - 1)) {
+	        	if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
 	                /* Вводимо умову: Якщо символ, розташований за індексом [і] не дорівнює 
 	        		/*символу, розташованому за індексом (довжина слова -1 -і), 
 	        		/*то змінна flag брехня
