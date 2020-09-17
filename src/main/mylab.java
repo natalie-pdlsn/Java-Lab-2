@@ -4,13 +4,13 @@ public class mylab {
 
 	public static void main(String[] args) {
 		 
-			String word = "Кит на морі романтик";
+		String word = "Кит на морі романтик";
 	        
-			// перетворює всі символи рядка з великих букв в маленькі
-		 	word = word.toLowerCase(); 
+		// перетворює всі символи рядка з великих букв в маленькі
+		word = word.toLowerCase(); 
 	        
-		 	//Всі знаки та пробіл 
-		 	word = word.replaceAll( " ", "");
+		//Всі знаки та пробіл 
+		word = word.replaceAll( " ", "");
 	        word = word.replaceAll( ".", "");
 	        word = word.replaceAll( ",", "");
 	        word = word.replaceAll( "!", "");
