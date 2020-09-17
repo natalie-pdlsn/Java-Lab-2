@@ -21,7 +21,7 @@ public class mylab {
 	        
 	        //Алгоритм 1: побуквенно порівнюємо початок і кінець
 
-	        boolean flag = false; 
+	        boolean flag = true; 
 
 	        /*Створюємо цикл: i = 0. 
 	        /*Цикл проходиться від 0(і) до довжини слова
@@ -30,7 +30,7 @@ public class mylab {
 			*/
 	        
 	        for (int i = 0; i < word.length(); i++) { 
-	        	if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
+	        	if (word.charAt(i) != word.charAt(word.length() - i - 1)) {
 	                /* Вводимо умову: Якщо символ, розташований за індексом [і] не дорівнює 
 	        		/*символу, розташованому за індексом (довжина слова -1 -і), 
 	        		/*то змінна flag брехня
@@ -38,11 +38,9 @@ public class mylab {
 	        		/*до центру.
 	        	    */
 	        		flag = false;
-				break; 
-	            }else{
-			flag = true;
-		    } 
-		}
+				    break; 
+		        }
+	        }
 	        
 	        //Вводимо умову: Якщо змінна flag = true, то виводимо, що інформацію, 
 	        //що рядок є паліндромом, інакше - не є паліндромом
